@@ -12,6 +12,7 @@ RUN conda install --quiet --yes\
         'bokeh' \
         'scikit-image' \
         'tqdm' \
+        'plotly' \
     && conda install -c conda-forge 'xgboost' \
 	&& conda clean -tipsy && \
 		fix-permissions $CONDA_DIR && \
