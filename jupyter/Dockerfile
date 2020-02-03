@@ -13,6 +13,8 @@ RUN conda install --quiet --yes\
         'scikit-image' \
         'tqdm' \
         'plotly' \
+        'imutils' \
+        'dlib' \
     && conda install -c conda-forge 'xgboost' \
 	&& conda clean -tipsy && \
 		fix-permissions $CONDA_DIR && \
